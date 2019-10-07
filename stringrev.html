@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Reverse
+    </title>
+
+
+</head>
+<style>
+    body{
+        width: 800px;
+        height:400px;
+       float: right;
+
+      
+    }
+span{
+    color:orangered;
+    font-size: 43px;
+}
+.button1{
+    color:green;
+    width:200px;
+    height:200px;
+    font-size:20px;
+    border:black;
+    background-color:red;
+    border-radius:100px;
+    position: absolute;
+    animation-name: example;
+  animation-duration: 8s;
+}
+.button2{
+    color:green;
+    width:200px;
+    height:200px;
+    font-size:20px;
+    right: 130px;
+    border:black;
+    background-color:red;
+    border-radius:100px;
+    position: relative;
+    animation-name: example;
+  animation-duration: 8s;
+}
+.box{
+    height: 200px;
+    width:200px;
+    background-color: red;
+    position: relative;
+    left:-65px;
+    transform: rotateZ(45deg);
+    top:-139px;
+    animation-name: example;
+  animation-duration: 8s;
+
+}
+#vj{
+    animation-name: example;
+  animation-duration: 8s;
+}
+@keyframes example{
+    from {background-color: red;}
+  to {background-color: rgb(152, 230, 152); transform: rotate(360deg);}
+}
+
+</style>
+<body>
+
+
+    
+<button class="button1"  onclick=viji()>
+
+</button>
+<button class="button2"   onclick=viji()>
+     
+    </button>
+    <div class="box" onmouseover="vijay()">
+        
+    </div>
+<span id="vj">
+
+</span>
+<span id="vj1">
+    
+    </span>
+<!--duplicate array list print <script>
+let a=["a","a","b","a"];
+let b = [];
+for(let i=0;i<a.length;i++){
+    if(b.indexOf(a[i]) === -1)
+    {
+  b.push(a[i]);
+    }
+}
+console.log(b);
+</script>-->
+<h1></h1>
+
+
+<!--String Reverse program-->
+
+<script>
+        function viji1()
+        {
+            var str="vijay"
+            //var str="? eM HtiW EfiL RuoY DnepS UoY LliW";  
+          // var str = document.getElementById("name").value;
+         // var str = document.getElementById("name").value;
+       // var str="viji";
+        var strv="";
+        for(var i=str.length-1; i>=0;i--)
+        {
+        strv+=str.charAt(i);
+        }
+       // console.log(strv);
+      document.getElementById("vj").innerHTML=strv;
+        }
+        function viji2()
+        {
+            var str="shree"
+            //var str="? eM HtiW EfiL RuoY DnepS UoY LliW";  
+          // var str = document.getElementById("name").value;
+         // var str = document.getElementById("name").value;
+       // var str="viji";
+        var strv="";
+        for(var i=str.length-1; i>=0;i--)
+        {
+        strv+=str.charAt(i);
+        }
+       // console.log(strv);
+      document.getElementById("vj1").innerHTML=strv;
+        }
+      
+      function vijay(){
+          setTimeout(viji1,1000);
+          setTimeout(viji2,2000);
+      }
+        
+       
+    </script>
+</body>
+
+</html
